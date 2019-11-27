@@ -13,19 +13,19 @@
     </el-menu-item>
     <el-menu-item index="2" style="color: gray" v-on:click="gotoList('2', 'Vue')">
       <i class="el-icon-menu"></i>
-      <span slot="title" :class="{'textcolor' : activeIndex === '2'}">Vue</span>
+      <span slot="title" :class="{'textcolor' : activeIndex === '2'}">软件工程</span>
     </el-menu-item>
     <el-menu-item index="3" style="color: gray" v-on:click="gotoList('3', 'Springboot')">
       <i class="el-icon-menu"></i>
-      <span slot="title" :class="{'textcolor' : activeIndex === '3'}">Springboot</span>
+      <span slot="title" :class="{'textcolor' : activeIndex === '3'}">操作系统</span>
     </el-menu-item>
     <el-menu-item index="4" style="color: gray" v-on:click="gotoList('4', 'MongoDB')">
       <i class="el-icon-menu"></i>
-      <span slot="title" :class="{'textcolor' : activeIndex === '4'}">MongoDB</span>
+      <span slot="title" :class="{'textcolor' : activeIndex === '4'}">编译原理</span>
     </el-menu-item>
     <el-menu-item index="5" style="color: gray" v-on:click="gotoList('5', 'HTML')">
       <i class="el-icon-menu"></i>
-      <span slot="title" :class="{'textcolor' : activeIndex === '5'}">HTML</span>
+      <span slot="title" :class="{'textcolor' : activeIndex === '5'}">计算机网络</span>
     </el-menu-item>
     <el-menu-item index="6" style="color: gray" v-on:click="gotoList('6', 'Others')">
       <i class="el-icon-menu"></i>

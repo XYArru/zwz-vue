@@ -14,7 +14,7 @@
       <router-link :to="{ path: '/search'}" style="color: dodgerblue;"><p>搜索</p></router-link>
     </el-menu-item>
     <el-menu-item v-on:click="changeNo('/write')" index="/write">
-      <p @click="showWarn('/write')" style="color: dodgerblue;">写博客</p>
+      <p @click="showWarn('/write')" style="color: dodgerblue;">写论文？？</p>
     </el-menu-item>
     <el-menu-item  v-on:click="changeNo('/admin/myProfile')" index="/admin/myProfile">
       <p @click="showWarn('/admin')" style="color: dodgerblue;">个人中心</p>

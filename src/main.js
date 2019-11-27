@@ -3,7 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+/*
 import store from './store'
+*/
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
@@ -32,6 +34,8 @@ Vue.use(ElementUI)
 
 router.beforeEach((to, from, next) => {
   if (to.meta.requireAuth) {
+    next()
+    /*
     if (store.state.user.username) {
       next()
     } else {
@@ -40,6 +44,7 @@ router.beforeEach((to, from, next) => {
         query: {redirect: to.fullPath}
       })
     }
+    */
   } else {
     next()
   }
@@ -49,7 +54,9 @@ new Vue({
   el: '#app',
   render: h => h(App),
   router,
+  /*
   store,
+  */
   components: { App },
   template: '<App/>'
 })
