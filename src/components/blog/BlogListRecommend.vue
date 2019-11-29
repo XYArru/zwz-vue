@@ -10,7 +10,7 @@
           <el-tag type="info">Murakawa Masahiro </el-tag>
           <el-tag type="warning">Nakamura Ryosuke</el-tag>
           <el-tag type="danger">Miyamoto Hiroki</el-tag>
-          <el-button type="primary" style="margin-left:180px;float:right">Full-text</el-button>
+          <el-button type="primary" style="margin-left:180px;float:right"><a href="https://www.tandfonline.com/doi/full/10.1080/01431161.2019.1648904">Full-text</a></el-button>
         </div>
         <div style="height:110px"></div>
         <div>
