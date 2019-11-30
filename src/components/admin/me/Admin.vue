@@ -10,18 +10,18 @@
           <el-menu-item @click="gotoList('0', 'myProfile')" style="color: gray">
             <span slot="title" :class="{'textcolor' : activePath === '0'}">个人资料</span>
           </el-menu-item>
-          <el-menu-item @click="gotoList('1', 'myFavor')" style="color: gray">
-            <span slot="title" :class="{'textcolor' : activePath === '1'}">我的收藏</span>
+          <el-menu-item @click="gotoList('1', 'myMoney')" style="color: gray">
+            <span slot="title" :class="{'textcolor' : activePath === '1'}">账户余额</span>
           </el-menu-item>
-          <el-menu-item @click="gotoList('2', 'myFollowing')" style="color: gray">
-            <span slot="title" :class="{'textcolor' : activePath === '2'}">我的关注</span>
+          <el-menu-item @click="gotoList('2', 'myDownload')" style="color: gray">
+            <span slot="title" :class="{'textcolor' : activePath === '2'}">下载列表</span>
           </el-menu-item>
-          <el-menu-item @click="gotoList('3', 'myFollower')" style="color: gray">
+          <!--<el-menu-item @click="gotoList('3', 'myFollower')" style="color: gray">
             <span slot="title" :class="{'textcolor' : activePath === '3'}">我的粉丝</span>
           </el-menu-item>
           <el-menu-item @click="gotoList('4', 'myBlog')" style="color: gray">
             <span slot="title" :class="{'textcolor' : activePath === '4'}">我的博客</span>
-          </el-menu-item>
+          </el-menu-item> -->
         </el-menu>
       </el-aside>
       <el-main class="content">

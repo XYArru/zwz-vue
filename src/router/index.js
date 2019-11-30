@@ -24,6 +24,9 @@ import OthersFavor from '../components/admin/others/othersfavor/OthersFavor'
 import OthersProfile from '../components/admin/others/othersprofile/OthersProfile'
 import OthersFollowing from '../components/admin/others/othersfollowing/OthersFollowing'
 import OthersFollower from '../components/admin/others/othersfollower/OthersFollower'
+import MyMoney from '../components/admin/me/mymoney/MyMoney'
+import MyDownload from '../components/admin/me/myDownload/MyDownload'
+import Expert from '../components/expert/expert'
 
 Vue.use(Router)
 
@@ -138,6 +141,22 @@ export default new Router({
               }
             },
             {
+              path: 'myMoney',
+              name: 'MyMoney',
+              component: MyMoney,
+              meta: {
+                requireAuth: true
+              }
+            },
+            {
+              path: 'myDownload',
+              name: 'MyDownload',
+              component: MyDownload,
+              meta: {
+                requireAuth: true
+              }
+            },
+            {
               path: 'myFavor',
               name: 'MyFavor',
               component: BlogListFollow,
@@ -146,6 +165,14 @@ export default new Router({
               }
             }
           ]
+        },
+        {
+          path: '/expert',
+          name: 'Expert',
+          component: Expert,
+          meta: {
+            requireAuth: true
+          }
         }
       ]
     },

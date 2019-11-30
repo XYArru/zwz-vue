@@ -5,24 +5,12 @@
 <!--    <p style="color: gray">ID: {{userId}}</p>-->
     <avatar style="float: left"></avatar>
     <section class="box" style="float: left;margin-left: 20px;background-color: white">
-      <p style="float: left;color: gray;font-size: small">ID: &nbsp;{{userId}}</p><br>
+      <p style="float: left;color: black">用户名: &nbsp;{{userId}}</p><br>
       <div class="clear"></div>
-      <p style="float: left;color: black;">关注: &nbsp;{{following}} &nbsp;&nbsp; 粉丝: &nbsp;{{followers}}</p>
+      <p style="float: left;color: black">E_Mail: &nbsp;&nbsp;{{nickname}}</p>
       <div class="clear"></div>
-      <hr style="width: 800px">
-      <p style="float: left;color: black">昵称: &nbsp;&nbsp;{{nickname}}</p>
+      <p style="float: left;color: black">手机号码: &nbsp;&nbsp; {{gender}}</p>
       <div class="clear"></div>
-      <p style="float: left;color: black">性别: &nbsp;&nbsp; {{gender}}</p>
-      <div class="clear"></div>
-      <p style="float: left;color: black">生日: &nbsp;&nbsp;{{birth}}</p>
-      <div class="clear"></div>
-      <p style="float: left;color: black">地区: &nbsp;&nbsp;{{address}}</p>
-      <div class="clear"></div>
-      <p style="float: left;color: black">行业: &nbsp;&nbsp;{{work}}</p>
-      <div class="clear"></div>
-      <p style="float: left;color: black">职位: &nbsp;&nbsp;{{position}}</p>
-      <div class="clear"></div>
-      <p style="float: left;color: black">简介: &nbsp;&nbsp;{{intro}}</p>
     </section>
     <el-button @click="hide=false;t_nickname=nickname;t_gender=gender;t_birth=birth;t_address=address;t_work=work;t_position=position;t_intro=intro" type="text" style="float: left;margin-top: 90px;">修改资料</el-button>
     <section v-if="hide===false" class="c-avatar-cutter">

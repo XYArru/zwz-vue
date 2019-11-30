@@ -19,6 +19,9 @@
     <el-menu-item  v-on:click="changeNo('/admin/myProfile')" index="/admin/myProfile">
       <p @click="showWarn('/admin')" style="color: dodgerblue;">个人中心</p>
     </el-menu-item>
+    <el-menu-item  v-on:click="changeNo('/expert')" index="/expert">
+    <p @click="showWarn('/expert')" style="color: dodgerblue;">专家门户</p>
+    </el-menu-item>
     <!--    -->
     <!--    -->
     <!--    -->
