@@ -27,7 +27,9 @@ import OthersFollower from '../components/admin/others/othersfollower/OthersFoll
 import MyMoney from '../components/admin/me/mymoney/MyMoney'
 import MyDownload from '../components/admin/me/myDownload/MyDownload'
 import Expert from '../components/expert/expert'
-
+import ExpertProfile from '../components/expert/profile/profile'
+import ExpertPaper from '../components/expert/paper/Paper'
+import ExpertPatent from '../components/expert/patent/Pantent'
 Vue.use(Router)
 
 export default new Router({
@@ -170,9 +172,36 @@ export default new Router({
           path: '/expert',
           name: 'Expert',
           component: Expert,
+          redirect: '/expert/profile',
           meta: {
             requireAuth: true
-          }
+          },
+          children: [
+            {
+              path: 'profile',
+              name: 'ExpertProfile',
+              component: ExpertProfile,
+              meta: {
+                requireAuth: true
+              }
+            },
+            {
+              path: 'paper',
+              name: 'ExpertPaper',
+              component: ExpertPaper,
+              meta: {
+                requireAuth: true
+              }
+            },
+            {
+              path: 'patent',
+              name: 'ExpertPatent',
+              component: ExpertPatent,
+              meta: {
+                requireAuth: true
+              }
+            }
+          ]
         }
       ]
     },
